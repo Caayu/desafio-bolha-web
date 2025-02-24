@@ -1,34 +1,28 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Desafio Bolha - FilmeFinder
 
-## Getting Started
+Este projeto foi desenvolvido como parte do **Desafio da Bolha**, com o objetivo de criar uma aplicação web para exibição de filmes. A aplicação permite aos usuários pesquisar filmes, filtrar por categorias e exibir os filmes em destaque.
 
-First, run the development server:
+## Funcionalidades
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Pesquisa de Filmes**: Permite ao usuário procurar filmes por título.
+- **Filtros de Categorias**: O usuário pode filtrar os filmes exibidos por categoria, escolhendo múltiplas opções.
+- **Filmes em Destaque**: O usuário pode habilitar a exibição de filmes em destaque.
+- **Exibição de Filmes**: Os filmes são exibidos com uma imagem, título, categoria e indicação de destaque, caso aplicável.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Tecnologias Utilizadas
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Next.js**: Framework React para renderização no lado do servidor (SSR) e geração de sites estáticos.
+- **TypeScript**: Superset do JavaScript que traz tipagem estática para maior segurança no código.
+- **Tailwind CSS**: Framework de CSS utilitário para um design rápido e responsivo.
+- **Hono.js**: Framework minimalista para construção de APIs, utilizado no backend da aplicação.
+- **Next.js Image**: Componente otimizado para carregamento de imagens em aplicações Next.js.
+- **Lucide Icons**: Conjunto de ícones personalizados usados na interface.
+- **Fetch API**: Utilizada para comunicação entre o frontend e o backend (Hono API).
 
-## Learn More
+## Instruções de Execução
 
-To learn more about Next.js, take a look at the following resources:
+Para rodar o projeto localmente, siga os seguintes passos:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/Caayu/desafio-bolha-web.git
