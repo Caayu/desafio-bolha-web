@@ -7,7 +7,7 @@ export const app = new Hono().basePath('/api')
 
 app.get('/movies', async (c) => {
   try {
-    const response = await fetch('http://localhost:1337/api/movies?populate=category')
+    const response = await fetch(`${process.env.NEXT_PUBLIC_STRAPI_API_URL}/movies?populate=category`)
 
     if (!response.ok) {
       return c.json({ error: 'Failed to fetch movies' }, 500)
@@ -21,7 +21,7 @@ app.get('/movies', async (c) => {
 })
 
 app.get('/categories', async (c) => {
-  const res = await fetch('http://localhost:1337/api/categories')
+  const res = await fetch(`${process.env.NEXT_PUBLIC_STRAPI_API_URL}/categories`)
   if (!res.ok) return c.json({ error: 'Failed to fetch categories' }, 500)
 
   const data = await res.json()
