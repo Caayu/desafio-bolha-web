@@ -1,3 +1,5 @@
+import { Category } from '@/types/category'
+
 export async function GET(req: Request) {
   try {
     const res = await fetch(`${process.env.NEXT_PUBLIC_STRAPI_API_URL}/categories`);
@@ -8,7 +10,7 @@ export async function GET(req: Request) {
 
     const data = await res.json();
 
-    const categories = data.data.map((category: any) => ({
+    const categories = data.data.map((category: Category) => ({
       id: category.id,
       name: category.name,
     }));
